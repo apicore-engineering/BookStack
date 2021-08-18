@@ -22,6 +22,7 @@
 @stop
 
 @section('left')
+    @auth
     @if($recents)
         <div id="recents" class="mb-xl">
             <h5>{{ trans('entities.recently_viewed') }}</h5>
@@ -46,4 +47,5 @@
             <div class="text-muted">{{ trans('entities.shelves_new_empty') }}</div>
         @endif
     </div>
+    @endauth
 @stop

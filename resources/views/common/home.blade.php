@@ -41,6 +41,7 @@
                 </div>
             </div>
 
+            @auth
             <div>
                 @if(count($favourites) > 0)
                     <div id="top-favourites" class="card mb-xl">
@@ -67,7 +68,9 @@
                     </div>
                 </div>
             </div>
+            @endauth
 
+            @auth
             <div>
                 <div id="recent-activity">
                     <div class="card mb-xl">
@@ -76,7 +79,7 @@
                     </div>
                 </div>
             </div>
-
+            @endauth
         </div>
     </div>
 
